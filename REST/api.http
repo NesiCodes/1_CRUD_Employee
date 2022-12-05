@@ -1,0 +1,33 @@
+### Ping API
+GET http://localhost:8080/emp/get/all
+
+###
+POST http://localhost:8080/emp/add
+Content-Type: application/json
+
+{
+    "employeeId": 3,
+    "name": "Macauley Peck",
+    "hiringDate": "1.01.2019",
+    "hiringSource": "Reference",
+    "department": "Marketing",
+    "country": "Germany"
+}
+
+###
+PUT http://localhost:8080/emp/edit
+Content-Type: application/json
+
+{
+    "employeeId": 2,
+    "name": "New name",
+    "hiringDate": "1.01.2019",
+    "hiringSource": "LinkedIn",
+    "department": "Finance",
+    "country": "Albania"
+}
+
+###
+DELETE http://localhost:8080/emp/delete?id=2
+
+###
